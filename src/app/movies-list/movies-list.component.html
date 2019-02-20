@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <h2> Movie List</h2>
+  <!--<button class="btn btn-danger" (click)="addUser()"> Add User</button>-->
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Rating</th>
+      <th>Review</th>
+      <th>Genre</th>
+      <th>Country</th>
+      <th>Copies</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let movie of movies">
+      <td class="hidden">{{movie.id}}</td>
+      <td>{{movie.title}}</td>
+      <td>{{movie.year}}</td>
+      <td>{{movie.rating}}</td>
+      <td>{{movie.review}}</td>
+      <td>{{movie.genre}}</td>
+      <td>{{movie.country}}</td>
+      <td>{{movie.copies}}</td>
+      <!--<td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete</button>
+        <button class="btn btn-danger" (click)="editUser(user)" style="margin-left: 20px;"> Edit</button></td>-->
+    </tr>
+    </tbody>
+  </table>
+</div>
